@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+    <h1>caixa</h1>
+   
+    valor em kg para r$<br />
+    <input id="n1" type="number" /><br />
+    kg quantidade<br /><br />
+    <input id="n2" type="number" /><br />
+    <button onclick="somar()">converter</button>
+  
+    <br /><br />
+    seu troco: <span></span>
+
+
+    <script>
+        var n1 = document.querySelector("#n1");
+        var n2 = document.querySelector("#n2")
+        var resultado = document.querySelector("span")
+
+        function somar(){
+            resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+        }
+
+    </script>
+
+
+
+    
+  
+</body>
+
+
+</html>
